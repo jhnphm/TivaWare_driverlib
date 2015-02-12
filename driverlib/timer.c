@@ -362,9 +362,9 @@ TimerConfigure(uint32_t ui32Base, uint32_t ui32Config)
              ((ui32Config & 0x000000ff) == TIMER_CFG_A_PERIODIC) ||
              ((ui32Config & 0x000000ff) == TIMER_CFG_A_PERIODIC_UP) ||
              ((ui32Config & 0x000000ff) == TIMER_CFG_A_CAP_COUNT) ||
-             ((ui32Config & 0x0000ff00) == TIMER_CFG_A_CAP_COUNT_UP) ||
+             ((ui32Config & 0x000000ff) == TIMER_CFG_A_CAP_COUNT_UP) ||
              ((ui32Config & 0x000000ff) == TIMER_CFG_A_CAP_TIME) ||
-             ((ui32Config & 0x0000ff00) == TIMER_CFG_A_CAP_TIME_UP) ||
+             ((ui32Config & 0x000000ff) == TIMER_CFG_A_CAP_TIME_UP) ||
              ((ui32Config & 0x000000ff) == TIMER_CFG_A_PWM)) &&
             (((ui32Config & 0x0000ff00) == TIMER_CFG_B_ONE_SHOT) ||
              ((ui32Config & 0x0000ff00) == TIMER_CFG_B_ONE_SHOT_UP) ||
